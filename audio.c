@@ -153,10 +153,6 @@ void write_wav_file(f32* data, int count, const char* filename) {
     free(buffer);
 }
 
-// 1seconds = 48000samples
-// 1cycles  = 48000samples / hz
-
-
 void table_scalar_additive_synthesis(f32* data, int count) {
     memset(data, 0, count * sizeof(f32));
     f64 cycles_per_sample = 50.0 / SAMPLE_RATE;
