@@ -1,6 +1,6 @@
 
 Comparing the speed of a few possible ways to make sine oscillators.
-If I'm doing anything quite silly, please do tell me, because how to write fast code can be very counter intuitive.
+
 An important disclaimer is that this is a contrived test due to frequency modulation not being implemented. In reality, you would just memcpy whole chunks of the signal if you didn't require real-time frequency changes. The performance of different techniques should still be mostly representative.
 
 I use additive synthesis as a benchmark because it is a very powerful kind of synthesis that happens to require a large amount of sine function evaluations.
